@@ -1,0 +1,47 @@
+﻿<Window x:Class="WPF1._5.AddLine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF1._5"
+        mc:Ignorable="d"
+        Title="AddLine" Height="258.416" Width="357.178">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Select substation" Width="140" Margin="10,10,10,0" />
+        <Label Grid.Row="0" Grid.Column="1" Content="Select substation" Width="140" Margin="10,10,10,0" />
+        <ComboBox Name="LeftSub" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="10" ItemsSource="{Binding subsList}" SelectionChanged="LeftComboBox_SelectionChanged" />
+        <ComboBox Name="RightSub" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="10" ItemsSource="{Binding subsList}" SelectionChanged="RightComboBox_SelectionChanged" />
+
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Select node" Width="140" Margin="10,10,10,0" />
+        <Label Grid.Row="2" Grid.Column="1" Content="Select node" Width="140" Margin="10,10,10,0" />
+        <ComboBox Name="LeftNode" Grid.Row="3" Grid.Column="0" Margin="10" ItemsSource="{Binding pomListLeft}" />
+        <ComboBox Name="RightNode"  Grid.Row="3" Grid.Column="1" Margin="10" ItemsSource="{Binding pomListRight}" />
+
+        <Grid Grid.Row="4" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Add" Grid.Row="0" Grid.Column="0" Width="90" Margin="40,40" Command="{Binding AddLine }" />
+            <Button Content="Close" Grid.Row="0" Grid.Column="1" Width="90" Margin="40,40" Command="{Binding CloseWindow }" />
+        </Grid>
+
+    </Grid>
+</Window>

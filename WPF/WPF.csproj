@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B49C736-401D-4B74-87F7-4E31D12AF069}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WPF1._5</RootNamespace>
+    <AssemblyName>WPF1.5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddBaseVoltage.xaml.cs">
+      <DependentUpon>AddBaseVoltage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddLine.xaml.cs">
+      <DependentUpon>AddLine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddNode.xaml.cs">
+      <DependentUpon>AddNode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubstation.xaml.cs">
+      <DependentUpon>AddSubstation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CIM\IEC61970\Base\Core\ACDCTerminal.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\BaseVoltage.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\Bay.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\ConductingEquipment.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\ConnectivityNode.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\ConnectivityNodeContainer.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\Equipment.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\EquipmentContainer.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\IdentifiedObject.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\PhaseCode.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\PowerSystemResource.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\Substation.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\Terminal.cs" />
+    <Compile Include="CIM\IEC61970\Base\Core\VoltageLevel.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\ACLineSegment.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\AsynchronousMachineKind.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\Breaker.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\Conductor.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\Disconnector.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\EnergyConsumer.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\Ground.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\LoadBreakSwitch.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\PowerTransformer.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\PowerTransformerEnd.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\ProtectedSwitch.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\RotatingMachine.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\SVCControlMode.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\Switch.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\SynchronousMachine.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\SynchronousMachineKind.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\SynchronousMachineOperatingMode.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\TransformerEnd.cs" />
+    <Compile Include="CIM\IEC61970\Base\Wires\WindingConnection.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="EES\CloneDeleteObject.cs" />
+    <Compile Include="EES\IdentifiedObject.cs" />
+    <Compile Include="EES\Lines.cs" />
+    <Compile Include="EES\RectObject.cs" />
+    <Compile Include="ICommandActive.cs" />
+    <Compile Include="LoginForm.xaml.cs">
+      <DependentUpon>LoginForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="ViewModel.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserSession.cs" />
+    <Page Include="AddBaseVoltage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddLine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddNode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddSubstation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\table-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\display.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\add.png" />
+    <Resource Include="icon\delete.png" />
+    <Resource Include="icon\edit-notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\wrong-01-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\mini_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\ubuntu_wallpaper_43_desktop_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\d1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\d2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\d3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\Help-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\help_blue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

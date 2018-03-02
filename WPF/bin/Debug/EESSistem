@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<user xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <aclines />
+  <terminals />
+  <BaseVoltages>
+    <BaseVoltage>
+      <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+      <name>voltage1</name>
+      <nominalVoltage>220</nominalVoltage>
+    </BaseVoltage>
+    <BaseVoltage>
+      <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+      <name>voltage2</name>
+      <nominalVoltage>90</nominalVoltage>
+    </BaseVoltage>
+  </BaseVoltages>
+  <Substations>
+    <Substation>
+      <mRID>95</mRID>
+      <name>sub1</name>
+      <ConnectivityNodes>
+        <ConnectivityNode>
+          <mRID>f6e4f574-40e4-4a7e-9fa0-32efc5d3ad80</mRID>
+          <name>node11</name>
+          <Terminals>
+            <Terminal>
+              <mRID>f6e4f574-40e4-4a7e-9fa0-32efc5d3ad80</mRID>
+              <name>Terminalnode11</name>
+              <connected>true</connected>
+              <sequenceNumber>0</sequenceNumber>
+              <phases>ABCN</phases>
+              <ACline>
+                <mRID>e01aca9d-112c-4684-baf9-dd551aef5c69 afaea712-ed49-49d1-b07c-010cdebe23ab</mRID>
+                <name>node11 node21Copy1</name>
+                <length>0</length>
+                <bch>0</bch>
+                <gch>0</gch>
+                <r>0</r>
+                <x>0</x>
+                <StartNode_X>87.648333333333355</StartNode_X>
+                <StartNode_Y>54</StartNode_Y>
+                <EndNode_X>387.64833333333337</EndNode_X>
+                <EndNode_Y>100</EndNode_Y>
+              </ACline>
+            </Terminal>
+          </Terminals>
+          <m_BaseVoltage>
+            <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+            <name>voltage1</name>
+            <nominalVoltage>220</nominalVoltage>
+          </m_BaseVoltage>
+        </ConnectivityNode>
+        <ConnectivityNode>
+          <mRID>8737c3ad-a08a-4a77-a5c8-653f1a5f80a2</mRID>
+          <name>node12</name>
+          <Terminals />
+          <m_BaseVoltage>
+            <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+            <name>voltage2</name>
+            <nominalVoltage>90</nominalVoltage>
+          </m_BaseVoltage>
+        </ConnectivityNode>
+        <ConnectivityNode>
+          <mRID>edefe64d-1477-49f1-96c5-5b9cacefeae8</mRID>
+          <name>node12Copy1</name>
+          <Terminals />
+          <m_BaseVoltage>
+            <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+            <name>voltage2</name>
+            <nominalVoltage>90</nominalVoltage>
+          </m_BaseVoltage>
+        </ConnectivityNode>
+      </ConnectivityNodes>
+      <VoltageLevels>
+        <VoltageLevel>
+          <ConnectivityNodes />
+          <BaseVoltage>
+            <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+            <name>voltage1</name>
+            <nominalVoltage>220</nominalVoltage>
+          </BaseVoltage>
+        </VoltageLevel>
+        <VoltageLevel>
+          <ConnectivityNodes />
+          <BaseVoltage>
+            <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+            <name>voltage2</name>
+            <nominalVoltage>90</nominalVoltage>
+          </BaseVoltage>
+        </VoltageLevel>
+      </VoltageLevels>
+      <VoltageLvls>220 90 </VoltageLvls>
+    </Substation>
+    <Substation>
+      <mRID>77</mRID>
+      <name>sub2</name>
+      <ConnectivityNodes>
+        <ConnectivityNode>
+          <mRID>1e6e2ff3-857c-4a31-96fb-13479d031d6e</mRID>
+          <name>node21</name>
+          <Terminals />
+          <m_BaseVoltage>
+            <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+            <name>voltage1</name>
+            <nominalVoltage>220</nominalVoltage>
+          </m_BaseVoltage>
+        </ConnectivityNode>
+        <ConnectivityNode>
+          <mRID>a9e09394-1655-49b9-ac97-b4533c0672e7</mRID>
+          <name>node21Copy1</name>
+          <Terminals>
+            <Terminal>
+              <mRID>a9e09394-1655-49b9-ac97-b4533c0672e7</mRID>
+              <name>Terminalnode21Copy1</name>
+              <connected>true</connected>
+              <sequenceNumber>0</sequenceNumber>
+              <phases>ABCN</phases>
+              <ACline>
+                <mRID>e01aca9d-112c-4684-baf9-dd551aef5c69 afaea712-ed49-49d1-b07c-010cdebe23ab</mRID>
+                <name>node11 node21Copy1</name>
+                <length>0</length>
+                <bch>0</bch>
+                <gch>0</gch>
+                <r>0</r>
+                <x>0</x>
+                <StartNode_X>87.648333333333355</StartNode_X>
+                <StartNode_Y>54</StartNode_Y>
+                <EndNode_X>387.64833333333337</EndNode_X>
+                <EndNode_Y>100</EndNode_Y>
+              </ACline>
+            </Terminal>
+          </Terminals>
+          <m_BaseVoltage>
+            <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+            <name>voltage1</name>
+            <nominalVoltage>220</nominalVoltage>
+          </m_BaseVoltage>
+        </ConnectivityNode>
+      </ConnectivityNodes>
+      <VoltageLevels>
+        <VoltageLevel>
+          <ConnectivityNodes />
+          <BaseVoltage>
+            <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+            <name>voltage1</name>
+            <nominalVoltage>220</nominalVoltage>
+          </BaseVoltage>
+        </VoltageLevel>
+      </VoltageLevels>
+      <VoltageLvls>220 </VoltageLvls>
+    </Substation>
+    <Substation>
+      <mRID>48</mRID>
+      <name>sub3</name>
+      <ConnectivityNodes>
+        <ConnectivityNode>
+          <mRID>c300edb8-daba-4d67-9900-b9aa27f8b607</mRID>
+          <name>node31</name>
+          <Terminals />
+          <m_BaseVoltage>
+            <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+            <name>voltage2</name>
+            <nominalVoltage>90</nominalVoltage>
+          </m_BaseVoltage>
+        </ConnectivityNode>
+      </ConnectivityNodes>
+      <VoltageLevels>
+        <VoltageLevel>
+          <ConnectivityNodes />
+          <BaseVoltage>
+            <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+            <name>voltage2</name>
+            <nominalVoltage>90</nominalVoltage>
+          </BaseVoltage>
+        </VoltageLevel>
+      </VoltageLevels>
+      <VoltageLvls>90 </VoltageLvls>
+    </Substation>
+  </Substations>
+  <Nodes>
+    <ConnectivityNode>
+      <mRID>f6e4f574-40e4-4a7e-9fa0-32efc5d3ad80</mRID>
+      <name>node11</name>
+      <Terminals>
+        <Terminal>
+          <mRID>f6e4f574-40e4-4a7e-9fa0-32efc5d3ad80</mRID>
+          <name>Terminalnode11</name>
+          <connected>true</connected>
+          <sequenceNumber>0</sequenceNumber>
+          <phases>ABCN</phases>
+          <ACline>
+            <mRID>e01aca9d-112c-4684-baf9-dd551aef5c69 afaea712-ed49-49d1-b07c-010cdebe23ab</mRID>
+            <name>node11 node21Copy1</name>
+            <length>0</length>
+            <bch>0</bch>
+            <gch>0</gch>
+            <r>0</r>
+            <x>0</x>
+            <StartNode_X>87.648333333333355</StartNode_X>
+            <StartNode_Y>54</StartNode_Y>
+            <EndNode_X>387.64833333333337</EndNode_X>
+            <EndNode_Y>100</EndNode_Y>
+          </ACline>
+        </Terminal>
+      </Terminals>
+      <m_BaseVoltage>
+        <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+        <name>voltage1</name>
+        <nominalVoltage>220</nominalVoltage>
+      </m_BaseVoltage>
+    </ConnectivityNode>
+    <ConnectivityNode>
+      <mRID>8737c3ad-a08a-4a77-a5c8-653f1a5f80a2</mRID>
+      <name>node12</name>
+      <Terminals />
+      <m_BaseVoltage>
+        <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+        <name>voltage2</name>
+        <nominalVoltage>90</nominalVoltage>
+      </m_BaseVoltage>
+    </ConnectivityNode>
+    <ConnectivityNode>
+      <mRID>1e6e2ff3-857c-4a31-96fb-13479d031d6e</mRID>
+      <name>node21</name>
+      <Terminals />
+      <m_BaseVoltage>
+        <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+        <name>voltage1</name>
+        <nominalVoltage>220</nominalVoltage>
+      </m_BaseVoltage>
+    </ConnectivityNode>
+    <ConnectivityNode>
+      <mRID>c300edb8-daba-4d67-9900-b9aa27f8b607</mRID>
+      <name>node31</name>
+      <Terminals />
+      <m_BaseVoltage>
+        <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+        <name>voltage2</name>
+        <nominalVoltage>90</nominalVoltage>
+      </m_BaseVoltage>
+    </ConnectivityNode>
+    <ConnectivityNode>
+      <mRID>edefe64d-1477-49f1-96c5-5b9cacefeae8</mRID>
+      <name>node12Copy1</name>
+      <Terminals />
+      <m_BaseVoltage>
+        <mRID>8f2e189d-153d-4a54-a115-4f0f289241f2</mRID>
+        <name>voltage2</name>
+        <nominalVoltage>90</nominalVoltage>
+      </m_BaseVoltage>
+    </ConnectivityNode>
+    <ConnectivityNode>
+      <mRID>a9e09394-1655-49b9-ac97-b4533c0672e7</mRID>
+      <name>node21Copy1</name>
+      <Terminals>
+        <Terminal>
+          <mRID>a9e09394-1655-49b9-ac97-b4533c0672e7</mRID>
+          <name>Terminalnode21Copy1</name>
+          <connected>true</connected>
+          <sequenceNumber>0</sequenceNumber>
+          <phases>ABCN</phases>
+          <ACline>
+            <mRID>e01aca9d-112c-4684-baf9-dd551aef5c69 afaea712-ed49-49d1-b07c-010cdebe23ab</mRID>
+            <name>node11 node21Copy1</name>
+            <length>0</length>
+            <bch>0</bch>
+            <gch>0</gch>
+            <r>0</r>
+            <x>0</x>
+            <StartNode_X>87.648333333333355</StartNode_X>
+            <StartNode_Y>54</StartNode_Y>
+            <EndNode_X>387.64833333333337</EndNode_X>
+            <EndNode_Y>100</EndNode_Y>
+          </ACline>
+        </Terminal>
+      </Terminals>
+      <m_BaseVoltage>
+        <mRID>07c6ab73-0dbe-4f7e-8f3f-872d0f408968</mRID>
+        <name>voltage1</name>
+        <nominalVoltage>220</nominalVoltage>
+      </m_BaseVoltage>
+    </ConnectivityNode>
+  </Nodes>
+</user>

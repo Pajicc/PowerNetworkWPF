@@ -1,0 +1,2 @@
+E:\Projects\ProjekatE344RVA\Projekat\WPF\WPF\bin\Debug\WPF1.5.exe.config
+C:\Users\SRDJAN\Desktop\WPF\WPF\bin\Debug\WPF1.5.exe.config

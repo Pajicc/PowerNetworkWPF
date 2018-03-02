@@ -1,0 +1,46 @@
+﻿<Window x:Class="WPF1._5.AddSubstation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF1._5"
+        mc:Ignorable="d"
+        Title="AddSubstation" Height="300" Width="438.119">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="22"/>
+            <ColumnDefinition Width="Auto" MinWidth="218"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Substation name:" Grid.Row="0" Grid.Column="0" Margin="0,8,46,11" HorizontalAlignment="Right" Width="102"/>
+        <TextBox Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="201,18,0,21"  Width="140" Text="{Binding SubstationName}" Height="16" Grid.ColumnSpan="2" />
+
+        <Label Content="Used substation level voltages:" Grid.Row="1" Grid.Column="0" Margin="22,10,46,10" HorizontalAlignment="Center" Width="174"/>
+        <Label Content="Available base voltages:" Grid.Row="1" Grid.Column="1" Margin="10,10,72,10" HorizontalAlignment="Center" Width="136"/>
+
+        <ListBox Name="SubLeft" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="80" Margin="42,0,60,28" Width="140" HorizontalAlignment="Center" />
+        <Button Grid.Row="2" Content="&lt;&lt;" Height="20" VerticalAlignment="Top" Margin="20,85,78,0" Command="{Binding RightToLeft}" Grid.Column="1" />
+        <Button Grid.Row="2" Content="&gt;&gt;" Height="20" VerticalAlignment="Bottom" Margin="51,0,71,3" Command="{Binding LeftToRight}"/>
+        <ListBox Name="SubRight" Grid.Row="2" Grid.Column="1" Margin="10,0,68,28" Width="140" HorizontalAlignment="Center" />
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Add" Grid.Row="0" Grid.Column="0" Margin="55,10,230,10" Width="90" Command="{Binding AddSubstationCommand}"/>
+            <Button Content="Close" Grid.Row="0" Margin="275,10,95,10" Width="90" Command="{Binding CloseWindow}" Grid.ColumnSpan="2"/>
+        </Grid>
+
+    </Grid>
+</Window>
