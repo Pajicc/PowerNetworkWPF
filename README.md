@@ -1,5 +1,5 @@
 # PowerNetworkWPF
-.NET WPF desktop application for manipulating with Power Network elements (Substations, Nodes, ACLine Segments, etc.)
+.NET WPF desktop application for creating Power Network model (CIM)
 
 # Used design patterns
 - MVVM
