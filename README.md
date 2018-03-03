@@ -14,8 +14,8 @@
 2. Open WPF.sln, build and run the solution
 
 # Login
-username: pajic
-password: pajic
+- username: pajic
+- password: pajic
 
 # Functionability
 - User login
